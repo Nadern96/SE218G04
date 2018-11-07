@@ -1,0 +1,80 @@
+
+{% extends 'Class/base.html' %}
+{% block title %}{% endblock %}
+{% block search-add %}
+    </ul>
+      <!-- Add Grade-->
+     <ul class="nav navbar-nav  navbar-right" style="margin-right: 10px;">
+            <li>
+                    <a href="{% url 'grade-add' %}">
+                            <i class="fas fa-plus"></i> Add Grade
+                    </a>
+            </li>
+        </ul>
+
+    <form class="form-inline my-2 my-lg-1" role="search"  method="GET" action="{% url 'grades' %}">
+                {% csrf_token %}
+              <input class="form-control mr-sm-2" type="search" placeholder="Student name" aria-label="Search" name="q" value="{{ request.GET.q }}">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+{% endblock %}
+
+
+{% block body %}
+
+
+    {% if all_grades %}
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+            <tbody>
+            {% for grade in all_grades  %}
+
+
+                <tr>
+                      <th scope="row">{{ grade.id}} </th>
+                      <td><a href="/Class/students/{{ grade.student_id.pk}}/details" style="color: #444444">{{ grade.student_id}}</a></td>
+                      <td>
+                          <button type="submit" class="btn btn-default btn-sm">
+                              <a  href="/Class/courses/{{ grade.course_id.id }}/details">{{ grade.course_id}}</a>
+                          </button>
+                      </td>
+                      <td>
+                          <a href="" style="color: #444444">{{ grade.degree}}</a>&nbsp;&nbsp;
+                          <button type="submit" class="btn btn-default btn-sm">
+                              <a  href="/Class/grades/{{ grade.id }}">Edit</a>
+                          </button>&nbsp;&nbsp;
+                          <form action="{% url 'DeleteGrade' grade.id%}" method="POST" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="course_id" value="{{ grade.id }}" />
+                                <button type="submit" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-trash">Delete</span>
+                                </button>
+                          </form>
+
+                      </td>
+
+                </tr>
+             {% endfor %}
+
+            </tbody>
+        </table>
+        {% else %}
+            <h3>No Grades </h3>
+
+
+    {% endif %}
+
+
+
+
+{% endblock %}
+
+
