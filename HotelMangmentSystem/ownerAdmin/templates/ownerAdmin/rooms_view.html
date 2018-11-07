@@ -1,0 +1,40 @@
+{% extends 'ownerAdmin/base.html' %}
+{% block title %}Rooms{% endblock %}
+
+{% load staticfiles %}
+{% block Create_room %}
+<li><a href="{% url 'create_room' %}"><span class="glyphicon glyphicon-plus"></span>Create Room</a></li>
+{% endblock %}
+{% block body %}
+	<div class="up-section">
+
+
+		<img src="{% static 'images/blog-banner-bg.jpg' %}">
+		<div class="container">
+		<h1 class="animated bounceInRight delay-1.5s"> Our Rooms </h1>
+
+</div>
+</div>
+<section class="explore_room_area explore_room_list">
+            <div class="container">
+            	<div class="row">
+
+                    {% for room in rooms %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="explore_item">
+
+                            <a href="{% url 'room_list' room %}" class="room_image">
+                                <img src="{{ room.room_image.url }}" alt="">
+
+                            </a>
+                            <div class="explore_text">
+                                <a href="{% url 'room_list' room %}"><h4>{{ room.room_type }}</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+</div>
+</div>
+</section>
+
+{% endblock %}

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import Permission, User
 
 
 class Date(models.Model):
@@ -13,11 +14,13 @@ class Room(models.Model):
     room_type = models.CharField(max_length=15)
     room_view = models.CharField(max_length=10)
     room_size = models.CharField(max_length=2)
-    room_date_booked = models.ManyToManyField(Date)
+    room_date_booked = models.ManyToManyField(Date, blank=True)
     room_beds = models.IntegerField()
+    room_image = models.ImageField(blank=True, null=True, upload_to="roomImages", default='roomImages/room3.jpg')
+    room_number = models.CharField(max_length=20)
 
     def __str__(self):
-        return self.room_type
+        return self.room_type.replace(" ", "")
 
 
 class Pricing(models.Model):

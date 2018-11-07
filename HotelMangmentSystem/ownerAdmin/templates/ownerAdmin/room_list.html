@@ -1,0 +1,55 @@
+{% extends 'ownerAdmin/base.html' %}
+{% block title %}{{ room_header }}{% endblock %}
+{% load staticfiles %}
+
+{% block body %}
+
+
+	<div class="container fluid">
+	    <img src="{% static 'images/room-list.jpg' %}">
+    </div>
+<div class="text-center">
+	<h1>
+		{{ room_header }} room list
+	</h1>
+</div>
+    <ul class="list-group">
+        <li>
+            <div class="container">
+                <h3>The Rooms Number : {{ rooms_number }}</h3>
+            </div>
+            <div class="container">
+                <div class="pull-right">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="submit" value="Add Room" class="book_now_btn" name="add">
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ul>
+<section class="explore_room_area explore_room_list">
+<div class="container">
+	 <ul class="list-group">
+         {% for room in rooms %}
+        <li class="list-group-item">
+            {{ room.room_type }}
+            <div class="pull-right">
+                <div class="book_now_btn"><a href="{% url 'room_edit' room room.id %}" >
+                    Edit Room</a></div>
+            </div>
+            <div class="pull-right">
+                <div class="book_now_btn"><a href="{% url 'delete_room' room room.id %}">
+                    Delete Room</a></div>
+            </div>
+        <br>
+            Room Number :{{ room.room_number }}
+        </li>
+             <br>
+         {% endfor %}
+     </ul>
+</div>
+    </section>
+
+
+{% endblock %}

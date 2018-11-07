@@ -1,0 +1,38 @@
+.my-background{
+
+	z-index: -1;
+	height: auto;
+left: 0;
+min-height: 100%;
+min-width: 860px;
+position: fixed;
+top: 0;
+width: 100%;
+}
+.center{
+	display: inline-block;
+	max-width: 860px;
+}
+.logo{
+    width: 200px;
+    height: auto;
+	margin-top: 20px;
+}
+
+.photos img{
+	height: 320px;
+	width: 450px;
+
+}
+.photos{
+	margin-top: 60px;
+}
+
+.photos h1{
+	font-family: 'Open sans';
+font-size: 25px;
+color: #fff;
+font-weight: 600;
+text-transform: uppercase;
+
+}
