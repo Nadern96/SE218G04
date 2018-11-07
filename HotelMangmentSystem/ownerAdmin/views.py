@@ -55,7 +55,6 @@ def room_list(request, room_type):
         room_type_for_header = ''
         for room in rooms:
             room_type_database = room.room_type.replace(" ", "")
-            room_type_for_header = room.room_type
             if room_type == room_type_database:
                 room_type_for_header = room.room_type
                 room_list_the_same.append(room)
