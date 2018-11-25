@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	 <meta charset="utf-8">
+    {% load staticfiles %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'ownerAdmin/rooms_views.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ownerAdmin/admin_login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ownerAdmin/room_list.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ownerAdmin/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'ownerAdmin/home.css' %}">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<div class="animated swing ">
+      <div class="navbar-brand">Administration</div>
+  </div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="{% url 'admin_login' %}">Home</a></li>
+
+        <li><a href="{% url 'rooms_admin' %}">Rooms</a></li>
+        <li><a href="#">Finance</a></li>
+        <li><a href="#">Staff</a></li>
+        <li><a href="#">Customers</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        {% block Create_room %}{% endblock %}
+        <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>

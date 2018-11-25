@@ -1,0 +1,199 @@
+.up-section img{
+	width: 100%;
+	height: 380px;
+}
+.up-section h1{
+
+	font-size: 70px;
+
+	font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+}
+.book_now_btn {
+  background: #ffb606;
+  cursor: pointer;
+  color: #fff;
+  line-height: 36px;
+  display: inline-block;
+  padding: 0px 25px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #ffb606;
+}
+
+.book_now_btn:hover {
+  color: #ffb606;
+  background: transparent;
+  border-color: #ffb606;
+}
+
+
+
+
+.explore_room_area {
+  background: #f6f6f6;
+  padding: 100px 0px;
+}
+
+.explore_room_area .explore_title {
+  padding-bottom: 55px;
+}
+
+.explore_room_area .explore_title .pull-right {
+  margin-top: 10px;
+}
+
+.explore_room_area .explore_title .pull-right .about_btn_b {
+  line-height: 46px;
+}
+
+.explore_room_area.explore_slider_area {
+  position: relative;
+  z-index: 2;
+}
+
+.explore_room_area.explore_slider_area:before {
+  content: "";
+  background: #ffb606;
+  height: 505px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.explore_room_area.explore_slider_area .explore_title {
+  padding-bottom: 41px;
+}
+
+.explore_room_area.explore_slider_area .explore_slider .explore_slider {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.explore_room_area.explore_slider_area .explore_slider .explore_slider .owl-prev, .explore_room_area.explore_slider_area .explore_slider .explore_slider .owl-next {
+  height: 46px;
+  width: 46px;
+  text-align: center;
+  font-size: 25px;
+  color: #7e7e7e;
+  border: 2px solid #d1d1d1;
+  line-height: 41px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.explore_room_area.explore_slider_area .explore_slider .explore_slider .owl-prev:hover, .explore_room_area.explore_slider_area .explore_slider .explore_slider .owl-next:hover {
+  background: #ffb606;
+  color: #fff;
+  border-color: #ffb606;
+}
+
+.explore_room_area.explore_slider_area .explore_slider .explore_slider .owl-prev {
+  margin-right: 26px;
+}
+
+.exploree_room_list .explore_room_item_inner {
+  margin-bottom: -50px;
+  overflow: hidden;
+}
+
+.exploree_room_list .explore_room_item_inner .explore_item {
+  margin-bottom: 50px;
+}
+
+.explore_item {
+  background: #fff;
+}
+
+.explore_item .room_image {
+  position: relative;
+  display: block;
+}
+
+.explore_item .room_image img {
+  max-width: 100%;
+}
+
+.explore_item .room_image:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.explore_item .room_image:hover:before {
+  opacity: 1;
+}
+
+.explore_item .explore_text {
+  overflow: hidden;
+  padding: 35px 35px 35px 35px;
+  -webkit-box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.09);
+}
+
+.explore_item .explore_text h4 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: .60px;
+  color: #242424;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+
+.explore_item .explore_text h4:hover {
+  color: #ffb606;
+}
+
+
+
+
+.explore_item .explore_text .explore_footer .pull-left h3 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #242424;
+  letter-spacing: .60px;
+  padding-top: 10px;
+}
+
+.explore_item .explore_text .explore_footer .pull-left h3 span {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.explore_item .explore_text .explore_footer .pull-right .book_now_btn {
+  padding: 0px 13px;
+  border: 2px solid #ffb606;
+  line-height: 34px;
+}
+.explore_item img{
+align-content: center;
+width: 360px;
+height: 287px;
+
+}

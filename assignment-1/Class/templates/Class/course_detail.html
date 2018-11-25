@@ -1,0 +1,14 @@
+
+{% extends 'Class/base.html' %}
+{% block title %}Courses{% endblock %}
+{% block search-add %}{% endblock %}
+{%  block body %}
+<h1>Course name:{{ course.course_name }}</h1>
+<h2>Max degree:{{ course.max_degree }}</h2>
+<h3>study years:{{ course.study_years}}</h3>
+
+<!-- this line prints the students that takes that course <h1>{{ course.student_set.all}}</h1>  -->
+
+<h4>{{ course.student_set.all}}</h4>
+
+{% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'ownerAdmin/base.html' %}
+{% load staticfiles %}
+{% block body %}
+    <body>
+	<img class="my-background" src="{% static 'images/home.jpg' %}">
+	<div class="text-center">
+		<div class="center">
+
+			<img class="logo"  src="{% static 'images/home-logo.png' %}">
+
+				</div>
+
+<section>
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-4 col-lg-offset-1">
+							<div class="photos">
+
+							<a href="{% url 'rooms_admin' %}">
+							<img src="{% static 'images/social_share_room.jpg' %}">
+							<h1>
+								Rooms
+							</h1>
+
+							</a>
+
+						</div>
+						</div>
+					<div class="col-lg-4 col-lg-offset-2">
+						<div class="photos">
+
+
+							<a href="#">
+							<img src="{% static 'images/Careers-StaffManagement_Frame2.jpg' %}">
+									<h1>
+								Staff
+							</h1>
+
+
+							</a>
+							</div>
+							</div>
+					</div>
+				</div>
+    </section>
+      <section>
+<div class="container">
+
+<div class="row">
+<div class="col-lg-4 col-lg-offset-1">
+						<div class="photos">
+
+
+							<a href="#">
+							<img src="{% static 'images/finance.jpg' %}">
+									<h1>
+								Finance
+							</h1>
+
+
+							</a>
+							</div>
+							</div>
+
+<div class="col-lg-4 col-lg-offset-2">
+						<div class="photos">
+
+
+							<a href="#">
+							<img src="{% static 'images/customer.jpg' %}">
+									<h1>
+								Staff
+							</h1>
+
+
+							</a>
+							</div>
+							</div>
+
+</div>
+</div>
+          </section>
+</div>
+
+</body>
+{% endblock %}

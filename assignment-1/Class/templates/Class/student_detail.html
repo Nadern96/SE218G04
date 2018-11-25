@@ -1,0 +1,14 @@
+
+{% extends 'Class/base.html' %}
+{% block title %}Student details{% endblock %}
+{% block search-add %}{% endblock %}
+
+{% block body %}
+
+<h1>Student Name : {{student.student_name }}</h1>
+<h3>Student age :{{ student.age }}</h3>
+<!-- this line print the courses that this student takes --!>
+
+<h4>Courses: {{ student.course.get_queryset}} </h1>
+
+{% endblock %}
