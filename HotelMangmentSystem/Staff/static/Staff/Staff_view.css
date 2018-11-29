@@ -1,0 +1,17 @@
+.body{
+
+}
+.card {
+    margin-top:50px;
+}
+
+@media (min-width: 768px) {
+   .card .card-img-top{
+        height: 350px;
+    }
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}

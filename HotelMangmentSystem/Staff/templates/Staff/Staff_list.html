@@ -1,0 +1,48 @@
+{% extends 'Staff/base.html' %}
+{% block title %}{{ staff_name }}{% endblock %}
+{% block staticfiles %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Staff/Staff_list.css'  %}">
+{% endblock %}
+{% block script %}
+
+    <script>
+
+        $(document).ready(function(){
+
+            $(".link").click(function () {
+
+                $(this).siblings(".hide").slideToggle(600);
+
+                var linktext = $(this).html();
+                if(linktext == "Show more")
+                    $(this).html("Show less");
+                else
+                    $(this).html("Show more");
+            })
+        });
+    </script>
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <div class="row">
+            {% for employee in staff_team %}
+                <div class="content col-12">
+                    <img class="img-responsive" src="{{ employee.profile_pic.url }}">
+                    <div class="details ">
+                        <span>Name: {{ employee.Name }}</span>
+                        <span>{{ employee.status }}</span>
+                        <p class="hide">Email: {{ employee.Email }}</p>
+                        <p class="hide">Phone: {{ employee.Phone }}</p>
+                        <p class="hide">Address: {{ employee.Address }}</p>
+                        <a  class="link">Show more</a>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+{% endblock %}
