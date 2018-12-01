@@ -227,8 +227,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="45" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="45" />
+            <state relative-caret-position="193">
+              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -331,7 +331,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="712" />
     <option name="y" value="134" />
     <option name="width" value="696" />
@@ -941,8 +941,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="45" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="45" />
+        <state relative-caret-position="193">
+          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
         </state>
       </provider>
     </entry>
