@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d9bde06-ba72-4188-9ac1-04568edd02e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/static/Staff/Staff_list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/static/Staff/Staff_view.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assignment-1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelMangmentSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HotelMangmentSystem/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelMangmentSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HotelMangmentSystem/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking/static/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/booking/static/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/rooms_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/rooms_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment-1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment-1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../assignment-1/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment-1/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/homestyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/hotelphoto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/hotelrestaurent.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/hotelroom1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/css/imgs/spa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage/js/jquery-1.11.3.min.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,59 +177,104 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-243560111">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="js" value="2" />
+          <entry key="py" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="10" />
+          <entry key="py" value="103" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="10" />
+          <entry key="Python" value="103" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/models.py">
+        <entry file="file://$PROJECT_DIR$/booking/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="204">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#643#675#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/urls.py">
+        <entry file="file://$PROJECT_DIR$/booking/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Staff/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html">
+        <entry file="file://$PROJECT_DIR$/booking/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+            <state relative-caret-position="313">
+              <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/booking/static/jquery-1.11.3.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/booking/static/bootstrap.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -246,7 +292,7 @@
         <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -303,13 +349,11 @@
         <option value="$PROJECT_DIR$/ownerAdmin/static/ownerAdmin/base.css" />
         <option value="$PROJECT_DIR$/ownerAdmin/static/ownerAdmin/home.css" />
         <option value="$PROJECT_DIR$/ownerAdmin/models.py" />
-        <option value="$PROJECT_DIR$/HotelMangmentSystem/urls.py" />
         <option value="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/rooms_view.html" />
         <option value="$PROJECT_DIR$/ownerAdmin/views.py" />
         <option value="$PROJECT_DIR$/Staff/templates/Staff_view.html" />
         <option value="$PROJECT_DIR$/Staff/templates/base.html" />
         <option value="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html" />
-        <option value="$PROJECT_DIR$/HotelMangmentSystem/settings.py" />
         <option value="$PROJECT_DIR$/Staff/admin.py" />
         <option value="$PROJECT_DIR$/../../Staff/views.py" />
         <option value="$PROJECT_DIR$/Staff/static/Staff_view.css" />
@@ -322,6 +366,10 @@
         <option value="$PROJECT_DIR$/Staff/templates/Staff/base.html" />
         <option value="$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html" />
         <option value="$PROJECT_DIR$/Staff/static/Staff/Staff_list.css" />
+        <option value="$PROJECT_DIR$/HotelMangmentSystem/settings.py" />
+        <option value="$PROJECT_DIR$/booking/templates/home.html" />
+        <option value="$PROJECT_DIR$/HotelMangmentSystem/urls.py" />
+        <option value="$PROJECT_DIR$/booking/views.py" />
       </list>
     </option>
   </component>
@@ -385,91 +433,24 @@
             <path>
               <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="booking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="booking" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
+              <item name="booking" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="ownerAdmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="Empolyee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HotelMangmentSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HotelMangmentSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -480,7 +461,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/untitled" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -561,54 +542,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15729484" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924013" visible="true" weight="0.24222586" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007599" side_tool="true" visible="true" weight="0.24222586" />
-      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49924013" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.0801964" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924013" weight="0.3289689" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15885022" />
+      <window_info anchor="bottom" id="Heroku" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49924013" visible="true" weight="0.2409836" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49924356" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" sideWeight="0.49924356" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.2409836" />
+      <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.49924013" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49924356" weight="0.45737705" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.49924013" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.2393617" />
       <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15729484" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24222586" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007599" side_tool="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49924013" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.0801964" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924013" weight="0.3289689" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.2393617" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -637,18 +596,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/rooms_details.html" />
-    <entry file="file://$PROJECT_DIR$/media/roomImages/room2_kSiKhCP.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/roomImages/room2_xdnDrAm.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/roomImages/room2_Nk8OqLa.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/roomImages/room2.jpg" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/wsgiref/simple_server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../base/base.html" />
     <entry file="file://$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/admin_index.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/forms/models.py" />
@@ -716,13 +663,7 @@
     <entry file="file://$PROJECT_DIR$/ownerAdmin/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/Django-1.9-py3.7.egg/django/core/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/Django-1.9-py3.7.egg/django/core/management/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Staff/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Staff/apps.py" />
     <entry file="file://$PROJECT_DIR$/ownerAdmin/static/ownerAdmin/base.css">
@@ -753,70 +694,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Staff/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="73" lean-forward="true" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Staff/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Staff/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Staff/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Staff/models.py" />
+    <entry file="file://$PROJECT_DIR$/../../Staff/urls.py" />
+    <entry file="file://$PROJECT_DIR$/../../Staff/admin.py" />
+    <entry file="file://$PROJECT_DIR$/../../Staff/views.py" />
     <entry file="file://$PROJECT_DIR$/Staff/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -875,16 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ownerAdmin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -895,20 +773,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/static/Js/Staff_list.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html">
+    <entry file="file://$PROJECT_DIR$/Staff/static/Js/Staff_list.js" />
+    <entry file="file://$PROJECT_DIR$/Staff/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="340">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -917,18 +803,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Staff/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="58" lean-forward="true" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        <state relative-caret-position="136">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -939,10 +818,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+          <caret line="34" column="71" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage/home.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/static/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/static/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="e#643#675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="115" column="39" lean-forward="true" selection-start-line="115" selection-start-column="39" selection-end-line="115" selection-end-column="39" />
         </state>
       </provider>
     </entry>

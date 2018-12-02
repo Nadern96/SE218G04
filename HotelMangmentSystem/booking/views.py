@@ -108,5 +108,9 @@ def register(request):
     else:
 
 
-    return HttpResponse("<h1>"+name+" "+tel+" "+checkin+" "+checkout+"the time is "+dif.__str__() +"</h1>")
+        return HttpResponse("<h1>"+name+" "+tel+" "+checkin+" "+checkout+"the time is "+dif.__str__() +"</h1>")
 
+
+
+def homepage (request):
+    return render(request, 'home.html')

@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title></title>
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/homestyle.css">
+  {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css'%}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	
 </head>
@@ -198,8 +198,7 @@
 			</div>
 		</div> 
 
-	
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="{% static 'jquery-1.11.3.min.js'%}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap.min.js'%}"></script>
 </body>
 </html>
