@@ -1,0 +1,99 @@
+* {
+
+ 	box-sizing: inherit; 
+  	box-sizing: border-box;
+  	margin: 0 auto;
+ 	padding: 0 auto;
+   }
+
+body
+{
+	background:url(https://discoveryprimeademo.hotelpropeller.com/files/2017/02/best-hotel-in-makati-1500x835.jpg?fbclid=IwAR2gsnic1XnXZS0bVgsPk9OUO1eophPdzpfngaIWx1PET6fTAg960iLTF4U);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+.searchbar
+{
+	display: block;
+	text-align: center;
+	
+	
+}
+
+form
+{
+	display: inline-block;
+	margin:50px 120px;
+	background-color: #B6CEF7;
+	text-align: center;
+	border-radius: 15px;
+	
+}
+
+.block1
+{
+	display: inline-block;
+	text-align: center;
+	border-radius: 15px;
+}
+
+
+input[type=submit]
+{
+	border-radius:10px;
+        background-color:#1968F0;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: +20px;
+	margin-top: 50px;
+	margin-bottom: 10px; 
+		
+}
+
+select
+ {
+	width:100px;
+	height: 50px;
+	padding:12px;
+	margin-bottom:10px;
+	font-family:Cursive;
+	border-radius:5px;
+	background-color:#1968F0;
+	color:white;
+	font-size:20px;
+
+}
+
+p
+{
+	padding:5px;
+}
+
+.page
+{
+	display: block;
+	text-align: center;
+        margin-top: 70px;
+	
+}
+
+.page1
+{
+	display: inline-block;
+	margin:45px;
+	background-color: #B6CEF7;
+	padding: 30px;
+	border-radius: 15px;
+}
+
+ul
+{
+       margin-top: 15px;
+      text-align: left;
+      font-size: +20px;
+}
