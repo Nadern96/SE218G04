@@ -26,6 +26,20 @@
     font-size: 22px;
     font-weight: bold;
 }
+.content .details .form-group {
+    margin-top:10px;
+    width: 220px;
+}
+.details .form-group select{
+    width: 150px;
+    float: left;
+}
+.details .form-group button{
+    float: right;
+}
+.clear-fix{
+    clear: both;
+}
 .content .details span{
     margin-top: 10px;
     display: block;

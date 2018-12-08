@@ -2,7 +2,7 @@
 {% block title %}{{ staff_name }}{% endblock %}
 {% block staticfiles %}
     {% load staticfiles %}
-    <link rel="stylesheet" type="text/css" href="{% static 'Staff/Staff_list.css'  %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Staff/Staff_List.css' %}">
 {% endblock %}
 {% block script %}
 
@@ -23,6 +23,15 @@
         });
     </script>
 {% endblock %}
+
+{% block search_input %}
+    <form class="form-inline my-2 my-lg-0" method="get" action="">
+        {% csrf_token %}
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by Status" name="q" value="{{ request.Get.q }}">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+{% endblock %}
+
 {% block body %}
     <div class="container">
         <div class="row">
@@ -31,7 +40,21 @@
                     <img class="img-responsive" src="{{ employee.profile_pic.url }}">
                     <div class="details ">
                         <span>Name: {{ employee.Name }}</span>
-                        <span>{{ employee.status }}</span>
+                        {% if request.user.is_authenticated  and not user.is_superuser%}
+                            <form class="form-group" method="post" action="">
+                              {% csrf_token %}
+                              <input hidden name="employee_name" value="{{ employee.Name }}">
+                              <select name="employee_status" class="form-control" id="sel1">
+                                <option hidden >{{ employee.status }}</option>
+                                <option>Online</option>
+                                <option>Offline</option>
+                              </select>
+                              <button type="submit" class="btn btn-primary">Save</button>
+                            </form>
+                            <div class="clear-fix"></div>
+                        {% else %}
+                             <span>{{ employee.status }}</span>
+                        {% endif %}
                         <p class="hide">Email: {{ employee.Email }}</p>
                         <p class="hide">Phone: {{ employee.Phone }}</p>
                         <p class="hide">Address: {{ employee.Address }}</p>

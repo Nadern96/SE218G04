@@ -3,9 +3,7 @@ from django.contrib.auth.models import Permission, User
 
 
 class Date(models.Model):
-    year = models.CharField(max_length=4, null=True)
-    month = models.CharField(max_length=2, null=True)
-    day = models.CharField(max_length=2, null=True)
+    date = models.CharField(max_length=20, default="ok")
 
 
 class Room(models.Model):

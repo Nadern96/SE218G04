@@ -11,7 +11,7 @@
                     </a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-1" role="search"  method="GET" action="{% url 'courses' %}">
+        <form class="form-inline my-2 my-lg-1" role="search"  method="GET" action="">
                 {% csrf_token %}
               <input class="form-control mr-sm-2" type="search" placeholder="Course name" aria-label="Search" name="q" value="{{ request.GET.q }}">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
