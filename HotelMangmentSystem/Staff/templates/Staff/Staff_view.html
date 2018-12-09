@@ -25,7 +25,10 @@
                     <a href="{% url 'Staff_list' staff_team %}"><img class="card-img-top"  src="{{ staff_team.image.url }}" alt="Card image cap"></a>
                     <div class="card-body">
                       <h5 class="card-title"><a href="{% url 'Staff_list' staff_team %}">{{ staff_team.Name }}</a></h5>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text"><small class="text-muted">Last updated at <span class="time">{{ staff_team.employee_set.latest.time }}</span></small></p>
+
+
+
                     </div>
                  </div>
                 </div>

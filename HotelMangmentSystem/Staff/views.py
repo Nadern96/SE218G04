@@ -5,6 +5,8 @@ from django.urls import reverse
 from django.contrib.auth import authenticate, login, logout
 from .models import Employee, Staff
 from django.contrib import messages
+from django.utils import timezone
+from datetime import timedelta
 from django import forms
 
 #viewing existing staff categories , search by staff catogery name
@@ -18,13 +20,15 @@ def Staff_view (request):
     if query is not None:
         staff = staff.filter(Name__startswith=query)
 
+
     context = {
         "Staff": staff,
+        "time": timezone.now()
     }
     return render(request, 'Staff/Staff_view.html', context)
 
 
-#view employees of this staff catogery , changing status of employee
+#view employees of this staff catogery ,Search employees by status ,  changing status of employee and saves the time at which this change happens
 
 
 def Staff_list(request, staff_name):
@@ -44,6 +48,7 @@ def Staff_list(request, staff_name):
         employee_status = request.POST.get('employee_status')
         employee = get_object_or_404(Employee, Name=employee)
         employee.status = employee_status
+        employee.time = timezone.now() + timedelta(hours=2)
         employee.save()
     context = {
         "staff_team": employees,
@@ -52,7 +57,7 @@ def Staff_list(request, staff_name):
     return render(request, 'Staff/Staff_list.html', context)
 
 
-
+#redceptionist login
 
 def Receptionist_login(request):
     if request.method == "POST":
@@ -67,9 +72,13 @@ def Receptionist_login(request):
             messages.error(request, "Incorrect username or password")
     return render(request, 'Staff/Receptionist_login.html')
 
+#receptionist logout
 def User_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('Staff_view'))
 
 
 
+#{{ staff_team.employee_set.last.time }}
+
+#def last_update(request):

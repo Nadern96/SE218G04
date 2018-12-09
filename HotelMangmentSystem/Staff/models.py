@@ -23,9 +23,10 @@ class Employee(models.Model):
     Address = models.CharField(max_length=100, default='7 Address Hotel')
     Staff_name = models.ForeignKey(Staff, on_delete=models.CASCADE)
 
+    class Meta:
+        get_latest_by = ['time']
     def __str__(self):
         return self.Name
 
-    def save(self, *args, **kwargs):
-        super(Employee, self).save(*args, **kwargs)
+
 

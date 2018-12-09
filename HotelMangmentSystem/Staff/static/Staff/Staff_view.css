@@ -15,3 +15,7 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+.time{
+    color: #557ECC;
+    font-weight: bold;
+}
