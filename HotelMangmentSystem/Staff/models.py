@@ -5,10 +5,12 @@ from django.utils import timezone
 
 # Create your models here.
 
+
 class Staff(models.Model):
     Name = models.CharField(max_length=100)
     image = models.FileField(null=True)
-    salary = models.IntegerField(blank=True,null=True);
+    salary = models.IntegerField(blank=True, null=True)
+
     def __str__(self):
         return self.Name
 
@@ -25,6 +27,7 @@ class Employee(models.Model):
 
     class Meta:
         get_latest_by = ['time']
+
     def __str__(self):
         return self.Name
 

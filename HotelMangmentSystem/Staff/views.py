@@ -7,8 +7,7 @@ from .models import Employee, Staff
 from django.contrib import messages
 from django.utils import timezone
 from datetime import timedelta
-from django import forms
-
+from .forms import *
 #viewing existing staff categories , search by staff catogery name
 
 
@@ -73,11 +72,56 @@ def Receptionist_login(request):
     return render(request, 'Staff/Receptionist_login.html')
 
 #receptionist logout
+
+
 def User_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('Staff_view'))
 
 
+def create_staff(request):
+    if not request.user.is_authenticated & request.user.is_superuser:
+        return render(request, 'ownerAdmin/admin_login.html')
+    else:
+        form = CreateStaff(request.POST or None, request.FILES or None)
+        if form.is_valid():
+            staff = form.save(commit=False)
+            if request.FILES:
+                staff.image = request.FILES['image']
+            staff.save()
+            return redirect('Staff_view')
+        return render(request, 'Staff/create_staff.html', {'form': form})
+
+
+def edit_staff(request, staff_name):
+        if not request.user.is_authenticated & request.user.is_superuser:
+            return render(request, 'ownerAdmin/admin_login.html')
+        else:
+            staff = get_object_or_404(Staff, Name=staff_name)
+            context = {'Name': staff.Name, 'image': staff.image, 'salary': staff.salary}
+            form = CreateStaff(request.POST or None, request.FILES or None, initial=context)
+            if form.is_valid():
+                staff.Name = form.cleaned_data.get('Name')
+                staff.salary = form.cleaned_data.get('salary')
+                if request.FILES:
+                    staff.image = request.FILES['image']
+                staff.save()
+                return redirect('Staff_view')
+            return render(request, 'Staff/edit_staff.html', {'form': form, 'Staff': staff})
+
+
+def delete_staff(request, staff_name):
+    if not request.user.is_authenticated & request.user.is_superuser:
+        return render(request, 'ownerAdmin/admin_login.html')
+    else:
+        if request.method == 'POST':
+            if 'delete' in request.POST:
+                staff = get_object_or_404(Staff, Name=staff_name)
+                staff.delete()
+                return redirect('Staff_view')
+            elif 'cancel' in request.POST:
+                return redirect('Staff_view')
+        return render(request, 'Staff/delete_staff.html')
 
 #{{ staff_team.employee_set.last.time }}
 

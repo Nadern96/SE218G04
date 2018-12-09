@@ -84,7 +84,8 @@ def room_edit(request, room_type, room_id):
         room = get_object_or_404(Room, pk=room_id)
         context = {'room_type': room.room_type, 'room_view': room.room_view,
                    'occupation_adult': room.occupation_adult, 'occupation_children': room.occupation_children,
-                   'room_size': room.room_size, 'room_beds': room.room_beds, 'room_number': room.room_number}
+                   'room_size': room.room_size, 'room_beds': room.room_beds, 'room_number': room.room_number,
+                   'room_features_price': room.room_features_price}
         form = EditRoomForm(request.POST or None, request.FILES or None, initial=context)
         if form.is_valid():
             room.room_type = form.cleaned_data.get('room_type')
@@ -94,6 +95,7 @@ def room_edit(request, room_type, room_id):
             room.occupation_adult = form.cleaned_data.get('occupation_adult')
             room.room_size = form.cleaned_data.get('room_size')
             room.room_number = form.cleaned_data.get('room_number')
+            room.room_features_price = form.cleaned_data.get('room_features_price')
             room.save()
             return redirect('room_list',  room_type)
         return render(request, 'ownerAdmin/room_edit.html', {'form': form, 'room': room})
@@ -131,3 +133,24 @@ def logout_admin(request):
         logout(request)
         return render(request, 'ownerAdmin/admin_login.html')
 
+
+def finance_edit(request):
+    if not request.user.is_authenticated & request.user.is_superuser:
+        return render(request, 'ownerAdmin/admin_login.html')
+    else:
+        prices = get_object_or_404(Pricing, id=1)
+        context = {'bed_price': prices.bed_price, 'breakfast_only_price': prices.breakfast_only_price,
+                   'half_board_price': prices.half_board_price, 'full_board_price': prices.full_board_price,
+                   'all_inclusive_price': prices.all_inclusive_price, 'is_refundable': prices.is_refundable,
+                   'staff_basic_salary': prices.staff_basic_salary}
+        form = EditPricing(request.POST or None, request.FILES or None, initial=context)
+        if form.is_valid():
+            prices.bed_price = form.cleaned_data.get('bed_price')
+            prices.breakfast_only_price = form.cleaned_data.get('breakfast_only_price')
+            prices.half_board_price = form.cleaned_data.get('half_board_price')
+            prices.full_board_price = form.cleaned_data.get('full_board_price')
+            prices.all_inclusive_price = form.cleaned_data.get('all_inclusive_price')
+            prices.is_refundable = form.cleaned_data.get('is_refundable')
+            prices.staff_basic_salary = form.cleaned_data.get('staff_basic_salary')
+            prices.save()
+    return render(request, 'ownerAdmin/financial_page.html', {'form': form})

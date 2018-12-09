@@ -10,7 +10,7 @@
 {% block create_staff %}
     {% if request.user.is_authenticated  and  user.is_superuser %}
         <li class="nav-link">
-            <a  style="font-size:18px;color:#28a745;" href="#"><span class="glyphicon glyphicon-plus"></span> Create Staff</a>
+            <a  style="font-size:18px;color:#28a745;" href="{% url 'create_staff' %}"><span class="glyphicon glyphicon-plus"></span> Create Staff</a>
         </li>
     {% endif %}
 {% endblock %}
@@ -39,8 +39,8 @@
                       <p class="card-text"><small class="text-muted">Last updated at <span class="time">{{ staff_team.employee_set.latest.time }}</span></small></p>
 
                     {% if request.user.is_authenticated  and  user.is_superuser%}
-                        <button class="btn btn-primary"><a href="#">Edit</a></button>
-                        <button class="btn btn-primary"><a href="#">Delete</a></button>
+                        <button class="btn btn-primary"><a href="{% url 'edit_staff' staff_team.Name %}">Edit</a></button>
+                        <button class="btn btn-primary"><a href="{% url 'delete_staff' staff_team %}">Delete</a></button>
                     {% endif %}
 
                     </div>
