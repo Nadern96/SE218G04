@@ -4,16 +4,14 @@
 .navbar-nav li {
 background: transparent;
 color: #fff;
-font-size: 15px;
-font-weight: 600;
+font-size: 18px;
 font-family: "Montserrat", sans-serif;
-text-transform: uppercase;
 padding: 0px;
 line-height: 85px;
 -webkit-transition: all 150ms linear;
 -o-transition: all 150ms linear;
 transition: all 150ms linear;
-margin-left: 30px; 
+margin-left: 10px;
 }
 .footer{
 	background: #ffb606;

@@ -19,16 +19,33 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Hotel</a>
+     {% if request.user.is_authenticated and user.is_superuser %}
+         <a class="navbar-brand" href="#">Adminstration</a>
+    {% endif %}
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
+
+        {% if request.user.is_authenticated and user.is_superuser %}
+          <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'admin_login' %}">Home <span class="sr-only">(current)</span></a>
+          </li>
+        {% else %}
+          <li class="nav-item ">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        {% endif %}
+        {% if request.user.is_authenticated and user.is_superuser %}
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'rooms_admin' %}">Rooms</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Finance</a>
+             </li>
+        {% endif %}
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'Staff_view' %}">Staff</a>
       </li>
@@ -44,6 +61,8 @@
                   <a class="dropdown-item" style="color: #28a745;" href="{% url 'User_logout' %}">Log out</a>
                 </div>
             </li>
+            {% block create_staff %}
+            {% endblock %}
         {% else %}
             <li class="nav-item"><a style="font-size: 18px;color: #28a745" class="nav-link" href="{% url 'Receptionist_login' %}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
         {% endif %}
