@@ -141,8 +141,7 @@ def finance_edit(request):
         prices = get_object_or_404(Pricing, id=1)
         context = {'bed_price': prices.bed_price, 'breakfast_only_price': prices.breakfast_only_price,
                    'half_board_price': prices.half_board_price, 'full_board_price': prices.full_board_price,
-                   'all_inclusive_price': prices.all_inclusive_price, 'is_refundable': prices.is_refundable,
-                   'staff_basic_salary': prices.staff_basic_salary}
+                   'all_inclusive_price': prices.all_inclusive_price, 'is_refundable': prices.is_refundable}
         form = EditPricing(request.POST or None, request.FILES or None, initial=context)
         if form.is_valid():
             prices.bed_price = form.cleaned_data.get('bed_price')
@@ -151,6 +150,6 @@ def finance_edit(request):
             prices.full_board_price = form.cleaned_data.get('full_board_price')
             prices.all_inclusive_price = form.cleaned_data.get('all_inclusive_price')
             prices.is_refundable = form.cleaned_data.get('is_refundable')
-            prices.staff_basic_salary = form.cleaned_data.get('staff_basic_salary')
             prices.save()
+            return redirect('admin_login')
     return render(request, 'ownerAdmin/financial_page.html', {'form': form})

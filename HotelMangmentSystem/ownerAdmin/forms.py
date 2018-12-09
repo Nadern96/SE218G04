@@ -20,4 +20,4 @@ class EditPricing(forms.ModelForm):
     class Meta:
         model = Pricing
         fields = ['bed_price', 'breakfast_only_price', 'half_board_price', 'full_board_price', 'all_inclusive_price',
-                  'is_refundable', 'staff_basic_salary']
+                  'is_refundable']

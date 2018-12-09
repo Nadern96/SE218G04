@@ -15,6 +15,8 @@
     {% endif %}
 {% endblock %}
 
+
+
 {% block search_input %}
     <form class="form-inline my-2 my-lg-0" method="get" action="">
         {% csrf_token %}
@@ -40,7 +42,7 @@
 
                     {% if request.user.is_authenticated  and  user.is_superuser%}
                         <button class="btn btn-primary"><a href="{% url 'edit_staff' staff_team.Name %}">Edit</a></button>
-                        <button class="btn btn-primary"><a href="{% url 'delete_staff' staff_team %}">Delete</a></button>
+                        <button class="btn btn-primary"><a href="{% url 'delete_staff' staff_team.Name %}">Delete</a></button>
                     {% endif %}
 
                     </div>

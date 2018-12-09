@@ -63,6 +63,8 @@
             </li>
             {% block create_staff %}
             {% endblock %}
+            {% block Add_employee %}
+            {% endblock %}
         {% else %}
             <li class="nav-item"><a style="font-size: 18px;color: #28a745" class="nav-link" href="{% url 'Receptionist_login' %}"><i class="fas fa-sign-in-alt"></i> Login</a></li>
         {% endif %}

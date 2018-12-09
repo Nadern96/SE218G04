@@ -29,6 +29,5 @@ class Pricing(models.Model):
     full_board_price = models.IntegerField(blank=True, null=True)
     all_inclusive_price = models.IntegerField(blank=True, null=True)
     is_refundable = models.IntegerField(blank=True, null=True)
-    staff_basic_salary = models.IntegerField(blank=True, null=True)
 
 

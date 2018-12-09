@@ -1,3 +1,4 @@
+
 .content {
     border: 2px solid cornflowerblue;
     border-radius: 20px;
@@ -20,6 +21,16 @@
     border-radius: 50%;
 
 }
+.content button{
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+
+}
+.content button a{
+    text-decoration: none;
+    color: #FFFF;
+}
 .content .details {
     margin-top: 100px;
     margin-left:50px;
@@ -36,6 +47,7 @@
 }
 .details .form-group button{
     float: right;
+    margin: 0 auto;
 }
 .clear-fix{
     clear: both;
