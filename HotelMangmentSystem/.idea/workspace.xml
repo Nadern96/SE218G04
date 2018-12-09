@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d9bde06-ba72-4188-9ac1-04568edd02e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/add_employee.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/employee_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staff/templates/Staff/emplyee_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/static/Staff/Staff_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/static/Staff/Staff_list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/templates/Staff/Staff_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/templates/Staff/Staff_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/templates/Staff/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/templates/Staff/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/templates/Staff/delete_staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/templates/Staff/delete_staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/templates/Staff/edit_staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/templates/Staff/edit_staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Staff/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Staff/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ownerAdmin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ownerAdmin/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="7d9bde06-ba72-4188-9ac1-04568edd02e4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +68,7 @@
     <session id="496583818">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.18" value="1" />
@@ -221,7 +202,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="374">
               <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
@@ -524,17 +505,17 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\static\images" />
+      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\static\ownerAdmin" />
+      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\media" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\Nader 2014\CSE_1stYear\Software Engineering\Project\SE218G04\HotelMangmentSystem\Staff\static" />
       <recent name="H:\Nader 2014\CSE_1stYear\Software Engineering\Project\SE218G04\HotelMangmentSystem\Staff\static\Staff" />
       <recent name="H:\Nader 2014\CSE_1stYear\Software Engineering\Project\SE218G04\HotelMangmentSystem\Staff\templates\Staff" />
       <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\templates\ownerAdmin" />
       <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\static\ownerAdmin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\static\images" />
-      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\ownerAdmin\static\ownerAdmin" />
-      <recent name="C:\Users\miro\Downloads\work\SE218G04\HotelMangmentSystem\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -607,7 +588,7 @@
       <window_info anchor="bottom" id="Heroku" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848023" visible="true" weight="0.21311475" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848023" weight="0.21311475" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -974,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ownerAdmin/templates/ownerAdmin/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="374">
           <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
