@@ -3,9 +3,9 @@
 <head>
 	<title></title>
   {% load staticfiles %}
-	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css'%}">
-	<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css'%}">
+	<link rel="stylesheet" type="text/css" href=" {% static 'bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	
 </head>
@@ -31,7 +31,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Booking</a></li>
+        <li><a href="{% url 'book' %}">Booking</a></li>
         <li><a href="#">About us</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
@@ -72,27 +72,31 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://placehold.jp/1200x600.png" alt="TAKE YOUR VACATON NOW">
+
+      <img src="{% static 'imgs/hotelphoto.jpg' %}"alt="TAKE YOUR VACATON NOW">
       <div class="carousel-caption">
-        ...
+        TAKE YOUR VACATON NOW
+              </div>
+    </div>
+    <div class="item">
+
+       <img src=" {% static 'imgs/hotelrestaurent.jpg' %}" alt="TAKE YOUR VACATON NOW">
+      <div class="carousel-caption">
+        Our Restaurants
       </div>
     </div>
     <div class="item">
-       <img src="http://placehold.jp/1200x600.png" alt="TAKE YOUR VACATON NOW">
+
+       <img src="   {% static 'imgs/room.jpg' %}" alt="TAKE YOUR VACATON NOW">
       <div class="carousel-caption">
-        ...
+        Our Rooms
       </div>
     </div>
     <div class="item">
-       <img src="http://placehold.jp/1200x600.png" alt="TAKE YOUR VACATON NOW">
+
+       <img src="   {% static 'imgs/spa.jpg' %}" alt="TAKE YOUR VACATON NOW">
       <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-       <img src="http://placehold.jp/1200x600.png" alt="TAKE YOUR VACATON NOW">
-      <div class="carousel-caption">
-        ...
+        Our Spa
       </div>
     </div>
     ...
@@ -198,7 +202,9 @@
 			</div>
 		</div> 
 
-	<script type="text/javascript" src="{% static 'jquery-1.11.3.min.js'%}"></script>
-	<script type="text/javascript" src="{% static 'bootstrap.min.js'%}"></script>
+
+
+	<script type="text/javascript" src="{% static 'jquery-1.11.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'bootstrap.min.js' %}"></script>
 </body>
 </html>

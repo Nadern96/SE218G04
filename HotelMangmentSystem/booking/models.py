@@ -9,4 +9,4 @@ class booking(models.Model):
     room = models.CharField(max_length=4, null=True)
 
     def __str__(self):
-        return self.customer_name + "  " + self.room + "  " + self.booking_day + "/" + self.booking_month + "/" + self.booking_year
+        return self.customer_name + "  " + self.room

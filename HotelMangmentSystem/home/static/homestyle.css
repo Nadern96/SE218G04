@@ -7,13 +7,31 @@ body{
 .navbar{
 	padding-right: 100px;
 	padding-left: 100px;
+	margin-bottom: 0px;
 }
 .carousel{
-	height:300px;
+	height:550px;
 }
 .carousel-inner > .item > img {
-    line-height: 30;
-    padding-left: 600px;
+    height: 550px;
+    width: 1200px;
+    
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+.carousel-indicators{
+    padding-top: 100px;
+}
+.carousel-caption{
+
+	font-size: 40px;
+	text-decoration: none;
+	color: #eae0e0;
+    padding-bottom: 60px;
+    text-shadow: 0 5px 0 #2f1f5a;
+
 }
 .test{
 	margin: 10px;

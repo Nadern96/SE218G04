@@ -1,22 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>form</title>
+	<title>form</title>
+     {% load staticfiles %}
+   	<link rel="stylesheet" type="text/css" href="{% static 'form.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
+<script>
+$('select').on('change', function() {
+  alert( this.value );
+});
+</script>
+
 <body>
 
+		<div class="Leftcontainer">
+        <img src={{ room.room_image.url}}>
+            <p>
+                occupation_adult= {{ room.occupation_adult }}<br>
+                occupation_children= {{ room.occupation_children }}<br>
+                room_beds= {{ room.room_beds }}<br>
+            </p>
 
 
 
-<form id="form" action="{% url 'register' %}" method="get" accept-charset="utf-8">
-      <input type="submit"  >
-    <input type="text" name="name" >
-    <input type="tel" name="tel" >
-    <input type="date" name="checkin" >
-    <input type="date" name="checkout" >
-    </form>
+		</div>
 
+		<div class="container">
+			<h2>Book Handpicked Room.</h2>
+			
+			 	<form   action="{% url 'register' %}" method="get"      >
+				 <label>Name:</label>      
+          			 <input type="text" name="username" placeholder="Please enter your name...">
+      
+
+           		<label>Mobile:</label>
+          			 <input type="tel" name="usrtel" placeholder="Please enter your mobile...">
+       
+				<label>Check In:</label>
+					<input type="date" name="check in">
+		
+
+				<label>Check Out:</label>
+		
+					<input type="date" name="check out">
+					 <input type="submit" name="submit" value="Submit"><br>
+
+                    <p style="color: white;"> price is {{ price  }} /day</p>
+                    <input type="hidden" name="room" value="{{ room }}" >
+		 		</form>
+		</div>
 
 </body>
 </html>
