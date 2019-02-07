@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d9bde06-ba72-4188-9ac1-04568edd02e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HotelMangmentSystem/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HotelMangmentSystem/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelMangmentSystem/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HotelMangmentSystem/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="7d9bde06-ba72-4188-9ac1-04568edd02e4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +240,7 @@
         <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="392">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
                 <element signature="e#643#675#0" expanded="true" />
               </folding>
@@ -579,15 +576,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18683812" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18683812" />
       <window_info anchor="bottom" id="Heroku" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848023" weight="0.21311475" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49848023" visible="true" weight="0.21311475" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49924356" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -930,7 +926,7 @@
     <entry file="file://$PROJECT_DIR$/HotelMangmentSystem/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
             <element signature="e#643#675#0" expanded="true" />
           </folding>
