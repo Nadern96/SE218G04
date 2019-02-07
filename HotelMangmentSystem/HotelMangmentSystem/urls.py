@@ -18,13 +18,14 @@ from django.urls import path, re_path, include
 from django.conf import settings
 from django.views.static import serve
 from booking import views
+from home import views
 
 urlpatterns = [
     path('admin/', include('ownerAdmin.urls')),
     path('staff/', include('Staff.urls')),
     path('s/', admin.site.urls),
     path('booking/', include('booking.urls')),
-    path('home/', views.homepage,name= 'home'),
+    path('', views.Home,name= 'Home'),
 ]
 
 if settings.DEBUG:
