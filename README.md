@@ -27,10 +27,10 @@ Link of Staff app : http://m.minaatef.com/staff/
 Link of Admin app : http://m.minaatef.com/admin
 
 Username and password to login to admin app : 
-username : miro .....
+username : miro ,
 password : amir
 
 
 Username and password for staf/reciptionist_login : 
-username : Miss_CAndreou....
+username : Miss_CAndreou ,
 password :nader24230563
