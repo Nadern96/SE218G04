@@ -1,0 +1,35 @@
+.box-1{
+  background-color:green;
+height:5px;
+      }
+  .green-text{
+  color:green;
+  }
+
+  .units-list{
+  	float:right;
+
+  }
+  .text1{
+  	position:relative;
+  	left:40px;
+  }
+  .text2{
+  	position:relative;
+  	left:25px;
+  }
+  .bott{
+  	background-color: black;
+  	color:white;
+  	height: 50px;
+  	border:solid green;
+  }
+  .text3{
+  	color:white;
+  	position:relative;
+  	left:50px;
+  	top: 10px;
+  	margin-right: 15%;
+  	font-size: 20px;
+
+  }

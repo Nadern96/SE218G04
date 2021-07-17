@@ -1,0 +1,196 @@
+* {
+  	box-sizing: inherit; 
+  	box-sizing: border-box;
+}
+
+header 
+{
+	background-image: url(http://anband.spb.ru/images/300/DSC100337748.jpg);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 500px;
+	margin: auto;
+}
+
+.texts
+{
+	color: white;
+	font-size:25px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+button
+{
+	font-size: 20px;
+	background-color:#FFB900;
+	border:1px solid #FFB900;
+	border-radius: 15px;
+	color: white;
+	padding: 15px 40px 15px 40px;
+
+}
+
+
+.sec1
+{
+background-color:#F9F5F5; 
+position: relative;
+
+}
+
+.sec1 p
+{
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	font-size: +20px;
+}
+.sec1 h2
+{
+	text-align: center;
+	padding: 70px;
+	font-size: 50px; 
+	font-weight: bold;
+}	
+
+.os img
+{
+	width: 100%;
+	height: auto;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	
+}
+
+
+.sec2
+{
+	
+	background-color: #EFE8E7;	
+	padding-bottom: 50px;
+	position: relative;
+	
+}
+
+
+.os2 img
+{
+	width: 100%;
+	height: auto;
+	padding-top:80px;
+	padding-left: 10px;
+}
+
+
+.sec3
+{
+	background-color: #E5DEDE;
+	padding:70px 150px;
+	
+}
+
+.sec3 h1
+{
+	text-align: center;
+	padding: 50px;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.os3
+{
+	width:280px;
+	height: 220px;
+	margin-bottom: 80px;
+	position: relative;
+	background-color: white;
+	padding: 30px;
+
+}
+.os3:hover
+{
+	background-color: #FFB900;
+}
+
+
+
+footer
+{
+	width: 100%;
+	height:500px;
+	background-color: #FFB900;
+	padding-left: 10px;
+	overflow: hidden;
+
+	}
+
+.footertxt
+{
+	padding: 100px;
+	text-align: center;
+	color:black;
+}
+
+.footertxt h1
+{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.footertxt button
+{
+	font-size: 15px;
+	font-weight: bold;
+	background-color:#494646;
+	border:1px solid #494646;
+	border-radius: 15px;
+	color: white;
+	padding: 15px 40px 15px 40px;
+	margin: 30px;
+}
+
+hr
+{
+	border-color: #EDDFDF;
+}
+
+.me
+{
+	display: inline;
+	margin: 0;
+	float: left;
+}
+
+.name
+{
+	text-align: right;
+	padding-right: 10px;
+}
+img:hover{
+	position: absolute;
+}
+
+@media (min-width: 992px) 
+{
+	.txt
+{
+	padding-top: 80px;
+	margin: 20px;
+	width: 300px;
+	float: left;
+}
+	
+}
+@media (max-width: 992px) 
+{
+	.txt
+{
+	padding-top: 80px;
+	margin: 20px;
+	width: 300px;
+	padding-left: 40px;
+
+}
+
+}

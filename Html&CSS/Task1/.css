@@ -1,0 +1,84 @@
+.text{
+	font-size: 15px;
+	padding-left: 20px ;
+}
+strong{
+	font-size: 30px;
+}
+
+b{
+	font-size: 20px;
+}
+
+.big-image{
+	width: 100% ;
+
+}
+hr {
+	border:solid red 5px; 
+width: 100%;
+background-color:red;
+
+}
+
+.parent {
+	position: relative;
+
+}
+
+.top-label {
+padding-left: 20px;
+	margin: 20px ;
+	font-weight: 20px ;
+	font-family: bold;
+
+
+
+
+}
+
+a:link{
+color: grey ;
+background-color: transparent;
+text-decoration: underline;
+
+}
+
+.loow{
+	float: left;
+	color:#fff;
+	font-size: 20px;
+	padding-left: 130px;
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 20px;
+}
+
+.bottom{
+	
+    
+    margin-top: 40px ;
+    padding: 10px;
+    margin-bottom: 0;
+    height: 60px;
+    background-color: black;
+
+}
+.right-list{
+
+float:right;
+font-size: 25px;
+color: grey;
+
+
+
+}
+a:hover{
+	font-weight: bold;
+
+
+}
+.do{
+
+	color: white;
+}

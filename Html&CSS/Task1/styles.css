@@ -1,0 +1,39 @@
+img{
+	width:100%;
+	margin:auto;
+}
+	
+.hor-line
+{
+	border:solid green;
+	width:100%;
+	}
+	
+	.color-lines-green
+	{
+		color:green;
+	 text-decoration: underline;
+      
+	 	
+	}
+	
+	.Resources
+	{
+		float:right;
+	
+	}
+	
+	.bottom
+	{
+		background-color:black;
+		border:solid green;
+		border-width:2px;
+		margin-top:40px;
+		color:white;
+		padding:20px;
+
+	}
+	
+	.margin{
+		margin-right:150px;
+	}

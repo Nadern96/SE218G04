@@ -1,4 +1,5 @@
 # SE218G04
+
 Hotel Management System 
 
 Hotel Manager system made you don’t have to sit and manage the entire activities on paper. And at the same time Owner of the Hotel will feel comfortable to keep a check on. Hotel easily from anywhere around the world.This System will give them power and flexibility to manage the entire system from a single online portal. Hotel management System provides room booking, staff
@@ -42,3 +43,5 @@ Test 3 Jenkins push on pull request with the master
 Test 4 Jenkins push on pull request with the master
 Test 4 Jenkins push on pull request with the master
 edit jenkins branch only
+Update readme
+

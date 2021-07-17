@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #008D96;
+}
+form {
+    display: block;
+    width:415px;
+    height: 500px;
+    margin:150px auto;
+    border: none; 
+    border-radius: 10px;
+    background-color: #1D2C4F;
+    position: relative;
+}
+form .top-background {
+    width:100%;
+    height: 150px;
+    background-image: url(fDs0w.png);
+    
+}
+form .top-background img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 150px;
+    top:80px;
+}
+form .sign-in {
+    width:50%;
+    height: 70px;
+    background-color: #00F5E1;
+    border: none;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 25%;
+}
+form .sign-in  span {
+    display: block;
+    padding-top: 25px;
+    font-size: 20px;
+    color: #98A2BD;
+    letter-spacing: 1px;
+}
+form fieldset {
+    border: none;
+    width:70%;
+    margin: auto;
+    margin-top:50px;
+}
+form section{
+    margin: 10px auto;
+    position: relative;
+}
+form section input {
+    width: 100%;
+    height: 40px;
+    background-color: #4E5875;
+    color: #98A2BD;
+    border: none;
+    border-radius: 10px;
+    padding-left: 50px;
+    font-size: 16px;
+}
+form section input:focus{
+    outline: none;
+}
+form section i{
+    color:#98A2BD;
+    position: absolute;
+    top:30px;
+    left:15px;
+}
+
+fieldset input[type=checkbox]{
+    width:15px;
+    height: 15px;
+    margin-top:20px;
+}
+fieldset  span{
+    font-size: 13px;
+    color: #00BCB8;
+}
+fieldset  span.check-name {
+    margin-right: 65px;
+}
+form input[type=submit] {
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top:30px;
+    background-color: #00F5E1;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #98A2BD;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
