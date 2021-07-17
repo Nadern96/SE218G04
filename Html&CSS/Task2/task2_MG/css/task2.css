@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box;
+	font-family:Trebuchet MS;
+}
+
+.bigdiv{
+	width: 50%;
+}
+.imgs{
+	background-image: url('imgs/1.png'); 
+	height: 100px;
+	width: 60%;
+	margin-top: 50px;
+	position: relative;
+} 
+
+.signin{
+	width: 200px;
+	background-color:#02F3DD;
+	color: white;
+	font-size: 200%;
+	padding: 10px;
+	position: absolute;
+	bottom: 80px; 
+	right: 100px;
+}
+
+.pp{
+	width: 100px ;
+	height: 100px;
+    position: absolute;
+    left: 140px;
+    top: 80px;
+}
+
+.form{
+    width: 60%;
+	overflow: auto;
+	background-color: #1F2B51;
+	border-radius: 0px 0px 15px 15px;
+	padding-top:50px;
+	margin-top: 40px;
+}
+.input_icon{
+   position: relative;
+}
+input[type=text]{
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #505673;
+	width: 300px;
+	border: none;
+    padding-left: 40px;
+}
+
+.input_icon i{
+  position: absolute;
+  top:30px;
+  left: 70px;
+  color:#cbcbb4;
+}
+.submit{
+	display: block;
+	padding: 10px;
+	margin: 20px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #02F3DD;
+	width: 300px;
+	border:none;
+}
+
+span{
+	color:#02F3DD;
+	padding: 20px;
+}
+
+h4{
+	display: inline;
+	padding-right: 20px;
+}
+
+a h4{
+	padding-left: 20px;
+	color:#02F3DD;
+	text-decoration: none;
+}
