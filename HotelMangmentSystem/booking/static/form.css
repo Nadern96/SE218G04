@@ -1,0 +1,196 @@
+	* {
+
+	  	box-sizing: inherit; 
+	  	box-sizing: border-box;
+	}
+	body
+	{
+		background-color: #F5F5F5;
+	
+	}
+
+	h2
+	{
+		
+		color: white;
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		padding:10px;
+			font-weight: bold;
+    	font-size: +25px;
+    }
+    
+   
+    select
+	 {
+		width:100px;
+		height: 50px;
+		padding:12px;
+		margin: 10px;
+		margin-left: 25PX;
+		font-family:Cursive;
+		background-color: #F37638;
+		color:white;
+		font-size:20px;
+		text-align: center;
+
+	}
+
+	p
+	{
+		font-size: +20px;
+		margin: 20PX;
+		margin-left: 45px;
+	}	
+
+    
+
+	form
+	{
+			font-size: 30px;
+		    padding:22px 0px;
+			margin:0 auto;
+				
+	}
+	label
+	{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: left;
+		color: white;
+
+	}
+	input[type=text]
+		{
+			width: 100%;
+			padding: 10px;
+			margin:5px 0px;
+			font-size: +18px;	
+			text-align: center;
+		}
+	input[type=tel]
+
+	{
+
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+			margin:5px 0px;
+			font-size: +18px;
+	}
+
+	input[type=date]
+
+	{
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+			margin:5px 0px;
+			font-size: +18px;
+	}
+
+	input[type=submit]
+	{
+		width: 90%;
+		margin:0px 20px;
+		padding: 12px;
+		margin-top: 20px;
+		background-color: #F37638;
+		color: white;
+		font-size: +25px;
+		font-weight: bold;
+	}
+
+	@media screen and (min-width: 1400px)
+{
+img
+    {
+    	width:880px;
+    	height:480px;
+    	margin-top: 20px;
+    	margin-left: 30px;
+    	margin-bottom: 20PX;
+    }
+
+    .container
+	{
+
+		width:380px;
+		height: 100%;
+		margin: 0 auto;
+		margin-right: 70px;
+		margin-top: 20px;
+		background-color:white;
+		background-size: cover;
+		padding:20px 30px;
+		float: right;
+		background-color: #2D67B2;
+		
+	}
+
+	.Leftcontainer
+    {
+    	float: left;
+
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+img
+    {
+    	width:880px;
+    	height:480px;
+    	margin-top: 20px;
+    	margin-left: 30px;
+    	margin-bottom: 20PX;
+    }
+
+    .container
+	{
+
+		width:380px;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		background-color:white;
+		background-size: cover;
+		padding:20px 30px;
+		background-color: #2D67B2;
+		
+	}
+
+}
+
+
+@media screen and (max-width: 1000px)
+{
+img
+    {
+    	width:95%;
+    	height:480px;
+    	margin-top: 20px;
+    	margin-bottom: 30PX;
+    	margin-left: auto;
+    	margin-right: auto;
+    	display:block;
+    }
+
+    .container
+	{
+
+		width:380px;
+		height: 100%;
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 20px;
+		background-color:white;
+		background-size: cover;
+		padding:20px 30px;
+		background-color: #2D67B2;
+		
+	}
+
+}

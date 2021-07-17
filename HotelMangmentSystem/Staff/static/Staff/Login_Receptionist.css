@@ -1,0 +1,127 @@
+	* {
+
+	  	box-sizing: inherit;
+	  	box-sizing: border-box;
+	}
+	body
+	{
+		background-color: #59666B;
+	}
+
+	p
+	{
+		font-size: 25px;
+		font-style: italic;
+		margin-top: 20px;
+		color: #28A745;
+
+
+	}
+
+	h2
+	{
+		font-style: italic;
+		border: 2px solid #28A745;
+		border-radius: 20px;
+		width: 70%;
+		text-align: center;
+		margin: 0 auto;
+		padding:10px;
+		font-size: 34px;
+		font-family:"Lucida Grande";
+    }
+
+	.container
+	{
+
+		width:480px;
+		height: 520px;
+		margin: 0 auto;
+		margin-top: 60px;
+		margin-bottom: 20px;
+		border-radius:15px;
+		background-color:white;
+		background-size: cover;
+		padding: 20px;
+
+	}
+	.messages {
+		margin:0 auto;
+        color:red;
+	}
+	.my-form
+	{
+		font-size: 30px;
+		margin:0 auto;
+	}
+
+	input[type=text],input[type=password]
+		{
+			width: 90%;
+			padding: 10px;
+			padding-left: 40px;
+			border-radius: 10px;
+			margin:15px 20px;
+			font-size: +18px;
+		}
+
+	.submit-login
+	{
+		width: 90%;
+		margin:22px 20px;
+		padding: 12px;
+		border-radius:10px;
+		background-color:#28A745;
+		color: white;
+		font-size: +25px;
+
+	}
+
+	.username
+	{
+		position: relative;
+	}
+
+	.pass
+		{
+			position: relative;
+		}
+   .username i , .pass i
+	{
+		position: absolute;
+		left: 35px;
+		top: 29px;
+		color: #aaa;
+	   font-size: 22px;
+	}
+
+
+	 input[type=checkbox]
+	{
+		 float:left;
+		 text-align: left;
+		 margin-left: 25px;
+		 margin-right: 5px;
+    }
+
+	a
+	{
+		float: right;
+		text-align: right;
+		color: black;
+		font-size: 14px;
+		margin-right: 22px;
+	}
+
+	a:hover
+	{
+		color:#28A745;
+	}
+
+	.box
+	{
+		padding-bottom:20px;
+		padding-top: 10px;
+		color: black;
+		font-size: 15px;
+	}

@@ -1,0 +1,68 @@
+
+{% extends 'Class/base.html' %}
+{% block title %}Students{% endblock %}
+{% block search-add %}
+    </ul>
+      <!-- Add Student-->
+     <ul class="nav navbar-nav  navbar-right">
+            <li>
+                    <a  href="{% url 'student-add' %}">
+                            <i class="fas fa-plus"></i> Add Student
+                    </a>
+            </li>
+        </ul>
+
+{% endblock %}
+
+{% block body %}
+    {% if all_students %}
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Edit Student</th>
+                  <th scope="col">Delete Student</th>
+                </tr>
+              </thead>
+            <tbody>
+            {% for student in all_students  %}
+
+
+                <tr>
+                      <th scope="row">{{ student.id }} </th>
+                      <td><a href="/Class/students/{{ student.id }}/details" style="color: #444444">{{ student.student_name}}</a></td>
+                      <td>
+                          <button type="submit" class="btn btn-default btn-sm">
+                              <a  href="/Class/students/{{ student.id }}">Edit</a>
+                          </button>
+                      </td>
+                      <td>
+                          <form action="{% url 'DeleteStudent' student.id%}" method="POST" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="course_id" value="{{ student.id }}" />
+                                <button type="submit" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-trash">Delete</span>
+                                </button>
+                          </form>
+                      </td>
+                </tr>
+             {% endfor %}
+
+            </tbody>
+        </table>
+        {% else %}
+            <h3>No Students </h3>
+
+
+    {% endif %}
+
+
+
+
+
+{% endblock %}
+
+
+

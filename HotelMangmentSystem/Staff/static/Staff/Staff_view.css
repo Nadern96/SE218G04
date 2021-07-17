@@ -1,0 +1,33 @@
+.body{
+
+}
+.card {
+    margin-top:50px;
+}
+
+@media (min-width: 768px) {
+   .card .card-img-top{
+        height: 350px;
+    }
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.time{
+    color: #557ECC;
+    font-weight: bold;
+}
+.card .card-body p {
+    float: left;
+}
+.card .card-body button{
+    float: right;
+    margin: 5px;
+}
+.card .card-body button a{
+    text-decoration: none;
+    color: #FFFF;
+}

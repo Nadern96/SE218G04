@@ -1,0 +1,94 @@
+{% extends 'Staff/base.html' %}
+{% block title %}{{ staff_name }}{% endblock %}
+{% block staticfiles %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Staff/Staff_List.css' %}">
+{% endblock %}
+{% block create_staff %}
+    {% if request.user.is_authenticated  and  user.is_superuser %}
+        <li class="nav-link">
+            <a  style="font-size:18px;color:#28a745;" href="{% url 'add_employee' staff_name%}"><span class="glyphicon glyphicon-plus"></span> Add Employee</a>
+        </li>
+    {% endif %}
+{% endblock %}
+{% block script %}
+
+    <script>
+
+        $(document).ready(function(){
+
+            $(".link").click(function () {
+
+                $(this).siblings(".hide").slideToggle(600);
+
+                var linktext = $(this).html();
+                if(linktext == "Show more")
+                    $(this).html("Show less");
+                else
+                    $(this).html("Show more");
+            })
+        });
+    </script>
+{% endblock %}
+
+{% block add_employee %}
+    {% if request.user.is_authenticated  and  user.is_superuser %}
+        <li class="nav-link">
+            <a  style="font-size:18px;color:#28a745; text-decoration: none" href="#"><span class="glyphicon glyphicon-plus"></span> Add Employee</a>
+        </li>
+    {% endif %}
+{% endblock %}
+
+
+{% block search_input %}
+    <form class="form-inline my-2 my-lg-0" method="get" action="">
+        {% csrf_token %}
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by Status" name="q" value="{{ request.Get.q }}">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            {% for employee in staff_team %}
+                <div class="content col-12">
+                    <img class="img-responsive" src="{{ employee.profile_pic.url }}">
+
+                    {% if request.user.is_authenticated  and  user.is_superuser  %}
+                        <button class="btn btn-primary"><a href="{% url 'edit_employee' staff_name employee.Name %}">Edit</a></button>
+                        <button class="btn btn-primary"><a href="{% url 'delete_employee' staff_name employee.Name %}">Delete</a></button>
+                    {% endif %}
+
+
+                    <div class="details ">
+                        <span>Name: {{ employee.Name }}</span>
+                        {% if request.user.is_authenticated  and not user.is_superuser%}
+                            <form class="form-group" method="post" action="">
+                              {% csrf_token %}
+                              <input hidden name="employee_name" value="{{ employee.Name }}">
+                              <select name="employee_status" class="form-control" id="sel1">
+                                <option hidden >{{ employee.status }}</option>
+                                <option>Online</option>
+                                <option>Offline</option>
+                              </select>
+                              <button type="submit" class="btn btn-primary save">Save</button>
+                            </form>
+                            <div class="clear-fix"></div>
+                        {% else %}
+                             <span>{{ employee.status }}</span>
+                        {% endif %}
+                        <p class="hide">Email: {{ employee.Email }}</p>
+                        <p class="hide">Phone: {{ employee.Phone }}</p>
+                        <p class="hide">Address: {{ employee.Address }}</p>
+                        <a  class="link">Show more</a>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'Staff/base.html' %}
+{% load staticfiles %}
+{% block title %}Delete Confirmation{% endblock %}
+
+{% block body %}
+ <section class="explore_room_area explore_room_list">
+ <div class=".text-center">
+     <form class="form-horizontal text-center" role="form" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+       <div class="container"></div>
+        <div class="text-center">
+            <h2>Are you sure you want to delete {{ staff_name }} Staff Category ?</h2>
+        </div>
+        <div class="text-center" >
+            <input type="submit" value="Delete" name="delete" class="btn btn-danger">
+            <input type="submit" value="Cancel" name="cancel" class="btn btn-success">
+        </div>
+    </form>
+ </div>
+    </section>
+{% endblock %}

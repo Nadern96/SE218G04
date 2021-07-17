@@ -1,0 +1,27 @@
+{% extends 'ownerAdmin/base.html' %}
+{% block title %}Edit Room{% endblock %}
+
+
+{% block body %}
+    <div class="container">
+         <br>
+            <div class="row">
+                <div class="col-xs-8">
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% include 'ownerAdmin/form_template.html' %}
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <input type="submit" value="Save" class="btn btn-success">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive" src="{{ room.room_image.url }}" />
+                </div>
+            </div>
+    </div>
+
+{% endblock %}
+

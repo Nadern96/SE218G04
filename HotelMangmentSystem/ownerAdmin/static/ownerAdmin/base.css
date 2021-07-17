@@ -1,0 +1,28 @@
+.navbar-inverse{
+	height: 55px;
+}
+.navbar-nav li {
+background: transparent;
+color: #fff;
+font-size: 18px;
+font-family: "Montserrat", sans-serif;
+padding: 0px;
+line-height: 85px;
+-webkit-transition: all 150ms linear;
+-o-transition: all 150ms linear;
+transition: all 150ms linear;
+margin-left: 10px;
+}
+.footer{
+	background: #ffb606;
+	z-index: 99999;
+	width: 100%;
+	left: 0px;
+	height: 80px;
+}
+
+.footer h2{
+    color: #242424;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}

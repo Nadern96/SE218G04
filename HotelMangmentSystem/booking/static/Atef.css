@@ -1,0 +1,129 @@
+* {
+
+ 	box-sizing: inherit; 
+  	box-sizing: border-box;
+  	margin: 0 auto;
+ 	padding: 0 auto;
+   }
+
+body
+{
+	background-image: url( https://spain-private-tours.com/wp-content/uploads/2017/09/image_20170730_174153_753.jpg );
+	background-color: #F5F5F5;
+        background-repeat: no-repeat;
+        background-size: cover;
+       background-color:rgba(0, 0, 0, 0.5);
+}
+
+.searchbar
+{
+	display: block;
+	text-align: center;
+	
+	
+}
+
+form
+{
+	display: inline-block;
+	margin:30px 70px;
+	background-color: #C8F1E5;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.block1
+{
+	display: inline-block;
+	text-align: center;
+	border-radius: 15px;
+	
+}
+
+
+input[type=submit]
+{
+	border-radius:5px;
+    background-color:#4f8aff;
+	width: 110px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: +20px;
+	margin-top: 30px;
+	
+		
+}
+
+select
+ {
+	width:90%;
+	height: 50px;
+	padding:5px;
+	margin-bottom:10px;
+	font-family:Cursive;
+	border-radius:5px;
+	background-color:#4f8aff;
+	color:white;
+	font-size:20px;
+
+}
+input[type=date]
+ {
+	width:90%;
+	height: 50px;
+	padding:5px;
+	margin-bottom:10px;
+	font-family:Cursive;
+	border-radius:5px;
+	background-color: #4f8aff;
+	color:white;
+	font-size:20px;
+    padding: 10px;
+    padding: 0px 10px;
+}
+
+label
+{
+	font-weight: bold;
+}
+p
+{
+	padding:5px;
+}
+
+.page
+{
+	display: block;
+	text-align: center;
+    margin-top: 70px;
+	
+}
+
+.page1
+{
+	display: inline-block;
+	margin:45px;
+	background-color: #C8F1E5;
+	border-radius: 5px;
+	width: 85%;
+}
+
+ul
+{
+	margin-top: 15px;
+      text-align: left;
+      font-size: +20px;
+}
+img
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+h2
+{
+color: #fff7ff;
+}

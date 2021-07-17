@@ -1,0 +1,68 @@
+
+{% extends 'Class/base.html' %}
+{% block title %}Courses{% endblock %}
+{% block search-add %}
+    </ul>
+      <!-- Add Student-->
+     <ul class="nav navbar-nav  navbar-right" style="margin-right: 10px;">
+            <li>
+                    <a  href="{% url 'course-add' %}">
+                            <i class="fas fa-plus"></i> Add Course
+                    </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-1" role="search"  method="GET" action="">
+                {% csrf_token %}
+              <input class="form-control mr-sm-2" type="search" placeholder="Course name" aria-label="Search" name="q" value="{{ request.GET.q }}">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+{% endblock %}
+
+{% block body %}
+{% if all_courses %}
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Edit Course</th>
+                  <th scope="col">Delete Course</th>
+                </tr>
+              </thead>
+            <tbody>
+            {% for course in all_courses  %}
+
+
+                <tr>
+                      <th scope="row">{{ course.id }} </th>
+                      <td><a href="/Class/courses/{{ course.id }}/details" style="color: #444444">{{ course.course_name}}</a></td>
+                      <td>
+                          <button type="submit" class="btn btn-default btn-sm">
+                              <a  href="/Class/courses/{{ course.id }}">Edit</a>
+                          </button>
+                      </td>
+                      <td>
+
+                          <form action="{% url 'DeleteCourse' course.id%}" method="POST" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="course_id" value="{{ course.id }}" />
+                                <button type="submit" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-trash">Delete</span>
+                                </button>
+                          </form>
+
+                      </td>
+                </tr>
+             {% endfor %}
+
+            </tbody>
+        </table>
+        {% else %}
+            <h3>No Courses  </h3>
+
+
+    {% endif %}
+
+{% endblock %}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>search</title>
+    {% load staticfiles %}
+	 <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
+   	<link rel="stylesheet" type="text/css" href="{% static 'Atef.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="searchbar" >
+		<form id="searchform" action="{% url 'search' %}" method="get" accept-charset="utf-8" >
+			<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-lg-3 col-md-6 col-xs-12 ">
+				<div class="block1">
+                    <p>room_types</p>
+			         <select name="room_types">
+
+            <option>{{ default }}</option>
+            {% for room in rooms %}
+                <option>{{ room.room_type }}</option>
+            {% endfor %}
+
+             </select>
+				</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-xs-12 ">
+
+					<div class="block1">
+						<p>CHECK-IN</p>
+					    <input type="date" name="checkin">
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 col-md-6 col-xs-12 ">
+
+					<div class="block1">
+						<p>CHECK-OUT</p>
+					    <input type="date" name="checkout">
+					</div>
+
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-xs-12 ">
+
+
+					<input type="submit" name="submit" value="search"><br>
+
+				</div>
+			</div>
+			</div>
+ 	</form>
+</div>
+
+<div class="page">
+
+
+			<div class="row">
+
+                {% for room in room_type_filter %}
+            <div class="col-lg-4 col-md-6 col-xs-12 ">
+                	<h2><a href="form?room={{room.room_type}}">{{room.room_type}} </a></h2>
+					<div class="page1" >
+						<a href="form?room={{room.room_type}}"><img src="{{room.room_image.url}}"></a>
+						<ul>
+							<li>{{room.room_beds}}" beds </li>
+							<li>{{room.room_view}} view</li>
+						</ul>
+					</div>
+				</div>
+                  {% endfor %}
+</div>
+</div>
+</div>
+</body>
+</html>
