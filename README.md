@@ -44,4 +44,6 @@ Test 4 Jenkins push on pull request with the master
 Test 4 Jenkins push on pull request with the master
 edit training branch only
 Staging 1
+Staging 2
+
 
